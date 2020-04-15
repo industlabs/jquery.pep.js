@@ -20,7 +20,7 @@
         });
 
         $('.pep.two').pep({ 
-          grid:       [120,120],
+          grid:       [10,10],
           shouldEase: false
         });
       });
@@ -37,7 +37,7 @@
           background: red; width: 160px; height: 160px; top: 140px;
       }
 
-      body{
+      <!body{
            background: url('https://www.rspsupply.com/images/product/medium/Hoffman-CCCP3035.jpg') no-repeat center center fixed;
         width: 1000px;
         height: 1000px; 
@@ -46,7 +46,27 @@
               0deg, transparent 24%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.3) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.3) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.3) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.3) 76%, transparent 77%, transparent) );
           height:100%;
           background-size:80px 80px; 
-        }
+        }-->
+      @import "compass/css3";
+
+.pep{ background: #ee874e; width: 80px; height: 80px; position: absolute; top: 20px; left: 20px }
+
+body{
+          @include background-image(       
+            linear-gradient(
+              0deg, transparent 24%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.3) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.3) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.3) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.3) 76%, transparent 77%, transparent) );
+          height:100%;
+          background-size:80px 80px; 
+}
+
+
+.demo{
+  background: url('https://www.rspsupply.com/images/product/medium/Hoffman-CCCP3035.jpg') no-repeat center center fixed;
+  width: 1000px;
+  height: 1000px; }
+      
+      
+      
       }
 
  
