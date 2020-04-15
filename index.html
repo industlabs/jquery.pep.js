@@ -12,7 +12,10 @@
     <script src="../src/jquery.pep.js"></script>
 
     <script type="text/javascript">
-
+       $(document).ready(function(){
+        $('.pep.one').pep({  constrainTo: '.parent-2' });
+      });
+      
       $(document).ready(function(){
         $('.pep.one').pep({ 
           grid:       [10,10],
@@ -28,6 +31,8 @@
     </script>
 
     <style type="text/css">
+      .parent-2     { width: 800px; height: 500px; background: yellow; }
+
       .pep{ 
           width: 80px; height: 80px; background: blue; position: absolute; 
           top: 20px; left: 20px; 
@@ -52,11 +57,13 @@
   </head>
 
   <body>
-
-    <div class='container'>
-      <div class="pep one"></div>
-      <div class="pep two"></div>
+    <div class="parent-2">
+      <div class='container'>
+        <div class="pep one"></div>
+        <div class="pep two"></div>
+      </div>
     </div>
+
 
   </body>
 
