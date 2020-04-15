@@ -10,12 +10,11 @@
 
     <!-- Load local lib and tests. -->
     <script src="../src/jquery.pep.js"></script>
-
     <script type="text/javascript">
        $(document).ready(function(){
         $('.pep.one').pep({  constrainTo: '.parent-2' });
       });
-      
+    
       $(document).ready(function(){
         $('.pep.one').pep({ 
           grid:       [10,10],
@@ -27,8 +26,8 @@
           shouldEase: false
         });
       });
-
     </script>
+    
 
     <style type="text/css">
       .parent-2     { width: 800px; height: 500px; background: gray; }
@@ -57,11 +56,19 @@
   </head>
 
   <body>
+    <button onclick="myFunction()">Try it</button>
     <div class="parent-2">
         <div class="pep one"></div>
         <div class="pep two"></div>
       </div>
     </div>
+
+  <script>
+function myFunction() {
+  var itm = document.getElementById("pep one").lastChild;
+  var cln = itm.cloneNode(true);
+}
+</script>
 
 
   </body>
