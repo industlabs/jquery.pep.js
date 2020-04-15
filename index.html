@@ -57,11 +57,19 @@
 
   <body>
     <div class="parent-2">
-        <div class="pep one"></div>
+        <button><div class="pep one"></div></button>
         <div class="pep two"></div>
       </div>
     </div>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+   $("button").click(function(){
+      $("div").clone().appendTo("body");
+   });
+});
+</script>
 
   </body>
 
